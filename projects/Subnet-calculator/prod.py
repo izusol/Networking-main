@@ -4,7 +4,7 @@ import ipaddress
 while True:
     entry = input("Enter IP/CIDR:\n")
     try:
-        # strict=False allows host IPs like 192.168.1.50/24 without throwing an error
+        
         net = ipaddress.IPv4Network(entry, strict=False)
         ip = ipaddress.IPv4Interface(entry)
         break
